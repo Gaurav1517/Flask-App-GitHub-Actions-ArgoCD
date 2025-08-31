@@ -280,7 +280,7 @@ Note: You can setup Argo CD in any cluster, instructions are same.
 
     ---
 
-    ##  Install Docker Desktop on Windows
+    ##  Install Docker Desktop on Windows.
 
     ### Required Features:
 
