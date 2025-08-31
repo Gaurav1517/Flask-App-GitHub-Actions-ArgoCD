@@ -57,8 +57,14 @@ docker --version
 ## Test Application Locally. 
 Whenever we are creating pipeline, it is best practice to test application locally.
 - Application prequisities. 
-  - Python 3.9 
+  - Python 3.9  [Python Download](https://www.python.org/downloads/)
   - pip installed
+
+  Verify Python & pip version:
+  ```bash
+  python --version 
+  pip --version
+  ```
 
 - Clone/Fork the Repo. 
     ```
@@ -208,8 +214,14 @@ Note: you need to change the name of your image, according to your dockerhub use
             git remote set-url origin https://github-actions:${{ secrets.TOKEN_GITHUB }}@github.com/gchauhan1517/
             git push -u origin main
     ```
+---
 
-    Make sure setup your docker Personal Access token into github repo. 
+### Configure secrets and permissions
+- Make sure setup your docker Personal Access token into github repo. 
+
+
+- Set Workflow permission Read and Write permissions to push github by github-actions.
+    Repository > settings > Actions > General > Workflow permissions : Read and Write permissions > Save
 
 
 ## Setup ArgoCD in Minikube
