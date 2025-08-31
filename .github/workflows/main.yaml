@@ -71,7 +71,7 @@ jobs:
       # Commit and push changes to GitHub
       - name: Commit the changes
         run: |
-          git config user.email "your-email@example.com"
+          git config user.email "gaurav.cloud000@gmail.com"
           git config user.name "GitHub Actions Bot"
           git add deploy/deploy.yaml
           git commit -m "Update deploy.yaml with new image version - ${{ env.VERSION }}"
