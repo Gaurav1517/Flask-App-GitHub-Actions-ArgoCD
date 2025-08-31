@@ -75,5 +75,5 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git add deploy/deploy.yaml
           git commit -m "Update deploy.yaml with new image version - ${{ env.VERSION }}"
-          git remote set-url origin https://x-access-token:${{ secrets.TOKEN_GITHUB }}@github.com/gchauhan1517/Flask-App-GitHub-Actions-ArgoCD.git
+          git remote set-url origin https://x-access-token:${{ secrets.TOKEN_GITHUB }}@github.com/Gaurav1517/Flask-App-GitHub-Actions-ArgoCD.git
           git push -u origin main
